@@ -1,0 +1,4 @@
+.inbox-mails, .spam-mails {
+	margin-bottom: 5px;
+	list-style-type: none;
+}
