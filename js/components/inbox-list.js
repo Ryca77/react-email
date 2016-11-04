@@ -12,7 +12,7 @@ var InboxList = function(props) {
 		return (
 			<li key={index} className="inbox-mails">
 				<InboxMail>
-					<Link to={'/inbox/'}
+					<Link to={'/inbox'} id={email.id}
 						  from={email.from}
 						  title={email.title}>
 					</Link>

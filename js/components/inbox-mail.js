@@ -8,8 +8,8 @@ var InboxMail = function(props) {
     return (
         <div>
             <strong>
-            	<Link to={'/inbox/'} className="inbox">
-            		{props.children.props.from}
+            	<Link to={'/inbox/' + props.children.props.id} className="inbox">
+            		From: {props.children.props.from}
             		<br></br>
                 	{props.children.props.title}
                 </Link>
