@@ -7,13 +7,13 @@ var InboxMail = function(props) {
     console.log(props.children.props);
     return (
         <div>
-            <strong>
+            <div>
             	<Link to={'/inbox/' + props.children.props.id} className="inbox">
             		From: {props.children.props.from}
             		<br></br>
                 	{props.children.props.title}
                 </Link>
-            </strong>
+            </div>
         </div>
     );
 };

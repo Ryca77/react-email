@@ -11,7 +11,7 @@ var IndexRoute = router.IndexRoute;
 var MailboxContainer = require('./components/mailbox-container');
 var InboxContainer = require('./components/inbox-container');
 var SpamContainer = require('./components/spam-container');
-var InboxList = require('./components/inbox-list');
+var Inbox = require('./components/inbox');
 var SpamList = require('./components/spam-list');
 
 var App = require('./components/app');
@@ -23,7 +23,7 @@ var routes =  (
         </Route>
         <Route path="/inbox" component={App}>
         	<IndexRoute component={InboxContainer} />
-        	<Route path=":emailId" component={InboxList} />
+        	<Route path=":emailId" component={Inbox} />
         </Route>
         <Route path="/spam" component={App}>
         	<IndexRoute component={SpamContainer} />
