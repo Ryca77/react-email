@@ -8,8 +8,8 @@ var SpamMail = function(props) {
     return (
         <div>
             <strong>
-            	<Link to={'/spam/'} className="inbox">
-            		{props.children.props.from}
+            	<Link to={'/spam/' + props.children.props.id} className="spam">
+            		From: {props.children.props.from}
             		<br></br>
                 	{props.children.props.title}
                 </Link>

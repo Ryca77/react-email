@@ -12,7 +12,7 @@ var SpamList = function(props) {
 		return (
 			<li key={index} className="spam-mails">
 				<SpamMail>
-					<Link to={'/spam'}
+					<Link to={'/spam'} id={email.id}
 						  from={email.from}
 						  title={email.title}>
 					</Link>
