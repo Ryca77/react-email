@@ -6,8 +6,9 @@ var Link = router.Link;
 var SpamMail = require('./spam-mail');
 
 var SpamList = function(props) {
-	var emails = Object.keys(props.inbox).map(function(emailId, index) {
-		var email = props.inbox[emailId];
+	console.log(props);
+	var emails = Object.keys(props.spam).map(function(emailId, index) {
+		var email = props.spam[emailId];
 		console.log(email);
 		return (
 			<li key={index} className="spam-mails">

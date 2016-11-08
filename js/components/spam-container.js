@@ -6,7 +6,7 @@ var SpamList = require('./spam-list');
 var SpamContainer = function() {
     return (
     	<div>
-    		<SpamList inbox={EMAILS.spam} />
+    		<SpamList spam={EMAILS.spam} />
     	</div>
     );
 };

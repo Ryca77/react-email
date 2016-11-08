@@ -12,7 +12,7 @@ var MailboxContainer = require('./components/mailbox-container');
 var InboxContainer = require('./components/inbox-container');
 var SpamContainer = require('./components/spam-container');
 var Inbox = require('./components/inbox');
-var SpamList = require('./components/spam-list');
+var Spam = require('./components/spam');
 
 var App = require('./components/app');
 
@@ -27,7 +27,7 @@ var routes =  (
         </Route>
         <Route path="/spam" component={App}>
         	<IndexRoute component={SpamContainer} />
-        	<Route path=":emailId" component={SpamList} />
+        	<Route path=":emailId" component={Spam} />
         </Route>
     </Router>
 );

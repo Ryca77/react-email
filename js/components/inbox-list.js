@@ -6,6 +6,7 @@ var Link = router.Link;
 var InboxMail = require('./inbox-mail');
 
 var InboxList = function(props) {
+	console.log(props);
 	var emails = Object.keys(props.inbox).map(function(emailId, index) {
 		var email = props.inbox[emailId];
 		console.log(email);
